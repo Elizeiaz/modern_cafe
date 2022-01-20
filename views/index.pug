@@ -1,0 +1,15 @@
+extends layout
+block content
+  include header
+  .wrapper
+    .mainImg
+      .blurBG
+        h1 Круто?
+  div
+  - var n = 10;
+  while n > 0
+    .stairs(style='font-size: ' + n + 1 + 'pt')
+      h1 Hello
+    -n=n-1
+
+  include footer

@@ -1,0 +1,18 @@
+extends layout
+block content
+  include header
+  .bookingWrapper
+    form(method='post', action)
+      input(type='text', placeholder='Ваше имя', name='name', required)
+      input(type='tel', placeholder='Ваш телефон', name='phone', required)
+      input(type='email', placeholder='Ваш email', name='email')
+      input(type='datetime-local', name='datetime', required)
+      select(name='tables')
+        optgroup(label='Выберите столик')
+          - var n = 0
+          while n < tables.length
+            option(value=n+1) #{tables[n].max_person}
+            - n = n + 1
+      input(type='range', min='0', max='5', step='1', value='2', name='hours')
+      button(type='submit') Забронировать
+  include footer

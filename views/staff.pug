@@ -1,0 +1,15 @@
+extends layout
+block content
+    include header
+    meta(charset='UTF-8')
+    link(rel='stylesheet', href='style.css')
+    title hello
+    .staffWrapper
+        - var n = 0
+        while n < staffs.length
+          .staff
+            img(src=staffs[n].image)
+            h3 #{staffs[n].name}
+            p #{staffs[n].post}
+          -n = n + 1
+    include footer

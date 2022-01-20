@@ -1,0 +1,58 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+@import "header.less";
+
+.wrapper {
+  height: 100vh;
+  position: relative;
+}
+
+.mainImg {
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("https://i.pinimg.com/originals/6b/85/59/6b855961911a4ef04b844f571f1aade2.jpg");
+}
+
+.blurBG {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.55);
+}
+
+.mainImg h1 {
+  margin: 0;
+  padding-top: 35vh;
+  text-align: center;
+  color: white;
+  font-family: "Lack Line", Arial;
+  font-weight: normal;
+  font-size: 8em;
+}
+
+.stairs{
+  font-family: Arial;
+  color: #c0ffa9;
+  text-align: center;
+  text-shadow: 0 1.5px 0 #ff0000;
+}
+
+@font-face {
+  font-family: "Lack Line";
+  src: url("../public/fonts/Lacklineitalic.ttf");
+  font-style: normal;
+  font-weight: bold;
+}
+
+@import "footer.less";
+
+@import "about.less";
+
+@import "staff.less";
+
+@import "booking.less";
