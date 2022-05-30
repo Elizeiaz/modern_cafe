@@ -57,7 +57,7 @@ function booked_tables(date) {
 
 function booking_create(client_name, client_phone, client_email, start, end, table_id) {
     var detail = {
-        client_name: client_name,h
+        client_name: client_name,
         client_phone: client_phone,
         client_email: client_email,
         start: start,
