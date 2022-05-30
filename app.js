@@ -30,10 +30,14 @@ app.use('/about', aboutRouter);
 app.use('/staff', staffRouter);
 app.use('/booking', bookingRouter)
 
-app.post('/booking', function (req, res){
-  const {book_table} = require("./manager/booking_manager");
-  book_table(res, req)
-});
+// Попытка седалть пост
+// app.post('/booking', function (req, res){
+//   console.log(req.body.name + '\n'
+//   + req.body.phone + '\n'
+//   + req.body.email + '\n'
+//   + new Date(req.body.datetime) + '\n'
+//   + new Date(req.body.datetime).setTime(this.getTime() + (req.body.hours * 60 * 60 * 1000)))
+// });
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
@@ -51,7 +55,7 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 
-//Устанавливаем соединение с mongoose
+// Устанавливаем соединение с mongoose
 var mongoose = require('mongoose');
 var mongoDB = 'mongodb+srv://admin:admin@cafe.hjatw.mongodb.net/test';
 mongoose.connect(mongoDB);

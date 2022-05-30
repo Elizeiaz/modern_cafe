@@ -8,7 +8,7 @@ var bookingSchema = new Schema({
     client_email: String,
     start: Date,
     end: Date,
-    table: { type: Schema.Types.ObjectId, ref: 'Table'}
+    table_id: Number
 });
 
 module.exports = mongoose.model('Booking', bookingSchema);

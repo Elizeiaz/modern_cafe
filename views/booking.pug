@@ -2,17 +2,52 @@ extends layout
 block content
   include header
   .bookingWrapper
-    form(method='post', action)
-      input(type='text', placeholder='Ваше имя', name='name', required)
-      input(type='tel', placeholder='Ваш телефон', name='phone', required)
-      input(type='email', placeholder='Ваш email', name='email')
-      input(type='datetime-local', name='datetime', required)
+    form(method='POST', action='/booking/book')
+      input(class='formElement' type='text', placeholder='Ваше имя', name='name', required)
+      input(class='formElement' type='tel', placeholder='Ваш телефон', name='phone', required)
+      input(class='formElement' type='email', placeholder='Ваш email', name='email', required)
+      input(class='formElement' id = 'dateTime' type='datetime-local', name='datetime', required)
       select(name='tables')
-        optgroup(label='Выберите столик')
+        optgroup(label='Сколько персон')
           - var n = 0
           while n < tables.length
-            option(value=n+1) #{tables[n].max_person}
+            option(value=n+1 id="option" + n) Столик на #{tables[n].max_person}
             - n = n + 1
-      input(type='range', min='0', max='5', step='1', value='2', name='hours')
-      button(type='submit') Забронировать
+
+      script.
+        const today=(new Date()).toLocaleString("EN-CA").slice(0,10);
+        var dateTime = document.getElementById("dateTime");
+        document.querySelectorAll('input[type="datetime-local"]')
+            .forEach(el=>{el.min=today+"T00:00"})
+
+        dateTime.addEventListener('change', function () {
+            var dateTimeValue = new Date(this.value);
+        })
+
+      span
+        input(id = 'inputRange', type='range', min='1', max='6', step='1', value='2', name='hours')
+        p(id= 'pRange') 2
+      button(class='formElement' type='submit') Забронировать
+
+      h1 Дебаг-таблица
+
+      table
+        tr
+          th Имя
+          th Телефон
+          th Столик
+          th Время начала
+          th Время конца
+        - var i = 0
+        while i < bookings.length
+          tr
+            td #{bookings[i].client_name}
+            td #{bookings[i].client_phone}
+            td #{bookings[i].table_id}
+            td #{bookings[i].start}
+            td #{bookings[i].end}
+          - i = i + 1
+      script(src='/javascripts/inputRangeListener.js')
+      script(src='/javascripts/submitListener.js')
+      script(src='/javascripts/dateTimeListener.js')
   include footer

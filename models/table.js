@@ -3,7 +3,7 @@ var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 
 var tableSchema = new Schema({
-    number: Number,
+    id: Number,
     max_person: {type: Number, max: 6}
 });
 

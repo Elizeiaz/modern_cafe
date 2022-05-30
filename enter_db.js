@@ -19,9 +19,9 @@ var tables = []
 var staffs = []
 var bookings = []
 
-function tableCreate(number, max_person, cb) {
+function tableCreate(table_id, max_person, cb) {
     var detail = {
-        number: number,
+        id: table_id,
         max_person: max_person
     }
 
@@ -58,14 +58,14 @@ function staffCreate(name, post, image, cb) {
     });
 }
 
-function bookingCreate(client_name, client_phone, client_email, start, end, table, cb) {
+function bookingCreate(client_name, client_phone, client_email, start, end, table_id, cb) {
     var detail = {
         client_name: client_name,
         client_phone: client_phone,
         client_email: client_email,
         start: new Date("2021-01-18T16:00"),
         end: new Date("2021-01-18T19:30"),
-        table: table
+        table_id: table_id
     }
 
     var newBooking = new Booking(detail);
@@ -120,7 +120,10 @@ function createStaffs(cb) {
 function createBookings(cb) {
     async.series([
             function (callback) {
-                bookingCreate('customer#1', '89126066400', 'customer@gmail.com', null, null, tables[0], callback)
+                bookingCreate(
+                    'customer#1', '89126066400', 'customer@gmail.com',
+                    null, null, tables[2].id, callback
+                )
             },
         ],
         cb);

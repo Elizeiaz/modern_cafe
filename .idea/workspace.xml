@@ -6,7 +6,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5c6f2689-ba95-4744-8e49-dae98bc179d0" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/javascripts/dateTimeListener.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/javascripts/inputRangeListener.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/javascripts/scroll.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/javascripts/submitListener.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/success.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/enter_db.js" beforeDir="false" afterPath="$PROJECT_DIR$/enter_db.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/tables_manager.js" beforeDir="false" afterPath="$PROJECT_DIR$/manager/tables_manager.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/booking.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/booking.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/table.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/table.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/stylesheets/about.less" beforeDir="false" afterPath="$PROJECT_DIR$/public/stylesheets/about.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/stylesheets/booking.less" beforeDir="false" afterPath="$PROJECT_DIR$/public/stylesheets/booking.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/stylesheets/header.less" beforeDir="false" afterPath="$PROJECT_DIR$/public/stylesheets/header.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/stylesheets/staff.less" beforeDir="false" afterPath="$PROJECT_DIR$/public/stylesheets/staff.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/stylesheets/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/stylesheets/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/booking.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/booking.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/about.pug" beforeDir="false" afterPath="$PROJECT_DIR$/views/about.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/booking.pug" beforeDir="false" afterPath="$PROJECT_DIR$/views/booking.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/header.pug" beforeDir="false" afterPath="$PROJECT_DIR$/views/header.pug" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,6 +36,14 @@
   </component>
   <component name="ComposerSettings">
     <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="Pug File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -29,7 +58,18 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="watcher.settings" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RunManager">
+    <configuration name="enter_db.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/enter_db.js" working-dir="$PROJECT_DIR$">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Node.js.enter_db.js" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -40,6 +80,12 @@
       <option name="presentableId" value="Default" />
       <updated>1642658345679</updated>
       <workItem from="1642658347084" duration="297000" />
+      <workItem from="1642659686217" duration="360000" />
+      <workItem from="1653807864989" duration="18013000" />
+      <workItem from="1653844470924" duration="15481000" />
+      <workItem from="1653896372131" duration="3364000" />
+      <workItem from="1653901061819" duration="1534000" />
+      <workItem from="1653908558035" duration="6138000" />
     </task>
     <servers />
   </component>
@@ -56,5 +102,44 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="396" y="211" key="EditFileWatcherDialog" timestamp="1653814378759">
+      <screen x="0" y="0" width="1453" height="864" />
+    </state>
+    <state x="396" y="211" key="EditFileWatcherDialog/0.0.1453.864@0.0.1453.864" timestamp="1653814378759" />
+    <state width="1410" height="224" key="GridCell.Tab.0.bottom" timestamp="1653899761952">
+      <screen x="0" y="0" width="1453" height="864" />
+    </state>
+    <state width="1410" height="224" key="GridCell.Tab.0.bottom/0.0.1453.864@0.0.1453.864" timestamp="1653899761952" />
+    <state width="1410" height="224" key="GridCell.Tab.0.center" timestamp="1653899761952">
+      <screen x="0" y="0" width="1453" height="864" />
+    </state>
+    <state width="1410" height="224" key="GridCell.Tab.0.center/0.0.1453.864@0.0.1453.864" timestamp="1653899761952" />
+    <state width="1410" height="224" key="GridCell.Tab.0.left" timestamp="1653899761952">
+      <screen x="0" y="0" width="1453" height="864" />
+    </state>
+    <state width="1410" height="224" key="GridCell.Tab.0.left/0.0.1453.864@0.0.1453.864" timestamp="1653899761952" />
+    <state width="1410" height="224" key="GridCell.Tab.0.right" timestamp="1653899761952">
+      <screen x="0" y="0" width="1453" height="864" />
+    </state>
+    <state width="1410" height="224" key="GridCell.Tab.0.right/0.0.1453.864@0.0.1453.864" timestamp="1653899761952" />
+    <state x="236" y="77" key="SettingsEditor" timestamp="1653814382616">
+      <screen x="0" y="0" width="1453" height="864" />
+    </state>
+    <state x="236" y="77" key="SettingsEditor/0.0.1453.864@0.0.1453.864" timestamp="1653814382616" />
+    <state x="437" y="31" width="579" height="801" key="find.popup" timestamp="1653821749515">
+      <screen x="0" y="0" width="1453" height="864" />
+    </state>
+    <state x="437" y="31" width="579" height="801" key="find.popup/0.0.1453.864@0.0.1453.864" timestamp="1653821749515" />
+    <state x="384" y="197" key="run.anything.popup" timestamp="1653896865802">
+      <screen x="0" y="0" width="1453" height="864" />
+    </state>
+    <state x="384" y="197" key="run.anything.popup/0.0.1453.864@0.0.1453.864" timestamp="1653896865802" />
+    <state x="389" y="181" width="672" height="678" key="search.everywhere.popup" timestamp="1653883888309">
+      <screen x="0" y="0" width="1453" height="864" />
+    </state>
+    <state x="389" y="181" width="672" height="678" key="search.everywhere.popup/0.0.1453.864@0.0.1453.864" timestamp="1653883888309" />
   </component>
 </project>

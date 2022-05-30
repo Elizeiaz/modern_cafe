@@ -1,9 +1,10 @@
 header {
   position: fixed;
-  height: 6vh;
+  height: 70px;
   width: 100%;
   background-color: rgb(255, 255, 255);
   z-index: 5;
+  transition: all 1s;
 
   display: flex;
   justify-content: space-between;
@@ -32,10 +33,24 @@ header {
 }
 
 .headerRightBtns {
+  display: table;
+
   margin: 0;
   height: 100%;
   padding: 0;
   background-color: #ff7373;
-  font-size: 1.2em;
+  transition: all 505ms;
+  font-size: 1.5em;
   color: #ffffff;
+  vertical-align: middle;
 }
+
+.headerRightBtns:hover{
+  background-color: red;
+}
+
+.headerRightBtns p{
+  display: table-cell;
+  vertical-align: middle;
+}
+
